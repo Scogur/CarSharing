@@ -1,0 +1,21 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+public class Office {
+    ArrayList<Integer> adminIds = new ArrayList<Integer>();
+    private static Office instance;
+
+    public static synchronized Office getInstance() {
+        if (instance == null) {
+            instance = new Office();
+        }
+        return instance;
+    }
+
+    public void addAdmin(int id) {
+        adminIds.add(id);
+    }
+
+    public ArrayList<Integer> getAdminIds() {
+        return adminIds;
+    }
+}
