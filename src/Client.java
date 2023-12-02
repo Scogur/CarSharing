@@ -1,14 +1,14 @@
-import java.sql.Date;
 import java.time.LocalDateTime;
+import java.util.Date;
 
-public class Admin implements User {
+public class Client implements User{
     Request request;
     String name;
+    Integer id;
 
-
-    public Admin(Request request, String name) {
-        this.request = request;
+    public Client(String name, Integer id) {
         this.name = name;
+        this.id = id;
     }
 
     public String getName() {
@@ -34,5 +34,6 @@ public class Admin implements User {
             return new RentCarRequestFactory();
         }
         else return null;
-    }
+        }
+
 }

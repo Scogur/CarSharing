@@ -1,5 +1,6 @@
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 public interface Request {
-    public void rentCar(User user, String carModel, Date date);
+    public void rentCar(User user, String carModel, LocalDateTime date);
 }
