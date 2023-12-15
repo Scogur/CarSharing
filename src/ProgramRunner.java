@@ -5,7 +5,8 @@ import java.time.LocalDateTime;
 
 public class ProgramRunner {
     public static void main(String[] args){
-        Schedule schedule = new Schedule();
+        Car car1 = new Car(1,"Mitsubishi");
+        Schedule.getSchedule().addCar(car1);
         Office office_1 = new Office();
         office_1.addAdmin(1);
         office_1.addAdmin(2);

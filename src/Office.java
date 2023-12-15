@@ -1,7 +1,7 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 public class Office {
-    ArrayList<Integer> adminIds = new ArrayList<Integer>();
+    ArrayList<Integer> adminIds = new ArrayList<>();
     private static Office instance;
 
     public static synchronized Office getInstance() {
