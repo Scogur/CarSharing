@@ -1,7 +1,4 @@
-import java.lang.reflect.Array;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 
 public class Schedule {
