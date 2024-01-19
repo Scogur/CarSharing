@@ -4,7 +4,10 @@ import java.time.LocalDateTime;
 public class ProgramRunner {
     public static void main(String[] args){
         Car car1 = new Car(1,"Mitsubishi");
+        Car car2 = new Car(2,"Toyota");
         Schedule.getSchedule().addCar(car1);
+        Schedule.getSchedule().addCar(car2);
+        System.out.println(Schedule.getSchedule().getCars());
         Office office_1 = new Office();
         office_1.addAdmin(1);
         office_1.addAdmin(2);
