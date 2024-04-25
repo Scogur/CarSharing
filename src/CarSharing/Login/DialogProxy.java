@@ -1,20 +1,19 @@
 package CarSharing.Login;
 
-public class Dialog implements Mediator{
+import java.util.Objects;
 
-    public void login(String[] data) {
-
-        System.out.println("Logging in");
-
-        //logging in
-    }
+public class DialogProxy implements Mediator{
 
     @Override
     public void login() {
-        getData();
-        System.out.println("Logging in");
-
-        //logging in
+        String[] data = getData();
+        if (checkEmpty(data)) {
+            Dialog dialog = new Dialog();
+            dialog.login(data);
+        }
+    }
+    private boolean checkEmpty(String[] data){
+        return (!Objects.equals(data[0], "")) | (!Objects.equals(data[1], ""));
     }
 
     @Override
