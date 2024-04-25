@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class OfficeTest {
 
     @Test
-    @DisplayName("Add Admin")
+    @DisplayName("Add CarSharing.Admin")
     void addAdmin() {
     }
 

@@ -1,9 +1,17 @@
+package CarSharing;
+
+import CarSharing.Requests.RentCarRequestFactory;
+import CarSharing.Requests.Request;
+import CarSharing.Requests.RequestFactory;
+
 import java.time.LocalDateTime;
 
 public class Admin implements User {
     Request request;
     String name;
+    Integer id;
 
+    Chat chat;
 
     public Admin(Request request, String name) {
         this.request = request;
@@ -33,5 +41,16 @@ public class Admin implements User {
             return new RentCarRequestFactory();
         }
         else return null;
+    }
+
+    @Override
+    public void recieveMessage(String message) {
+        System.out.println(this.id+" recieve "+ message );
+
+    }
+
+    @Override
+    public void sendMessage(String message) {
+        chat.sendMessage(message, this);
     }
 }

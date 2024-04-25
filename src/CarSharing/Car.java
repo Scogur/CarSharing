@@ -1,3 +1,5 @@
+package CarSharing;
+
 public class Car {
     Integer id;
     String model;

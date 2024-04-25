@@ -1,3 +1,5 @@
+package CarSharing.Requests;
+
 public class RentCarRequestFactory implements RequestFactory{
 
     @Override

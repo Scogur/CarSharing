@@ -1,3 +1,5 @@
+package CarSharing;
+
 import java.util.ArrayList;
 public class Office {
     ArrayList<Integer> adminIds = new ArrayList<>();
