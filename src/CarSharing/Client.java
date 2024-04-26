@@ -32,7 +32,7 @@ public class Client implements User{
         if(requestType==1) {
             RequestFactory requestFactory = requestByType(requestType);
             request = requestFactory.createRequest();
-            request.rentCar(this, option, date);
+            //request.rentCar(this, option, date);
         }
     }
 

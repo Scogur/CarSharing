@@ -1,5 +1,6 @@
 package CarSharing;
 
+import CarSharing.Price.Afternoon;
 import CarSharing.Price.Morning;
 import CarSharing.Price.TimeOfDay;
 
@@ -31,7 +32,7 @@ public class ProgramRunner {
         chat1.addChatUser(client_2);
         chat1.addChatUser(client_3);
         client_1.sendMessage("Message");*/
-        TimeOfDay morning = new Morning();
-        morning.getPrice();
+        TimeOfDay afternoon = new Afternoon();
+        afternoon.getPrice();
     }
 }
