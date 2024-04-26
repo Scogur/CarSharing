@@ -13,7 +13,7 @@ public class DialogProxy implements Mediator{
         }
     }
     private boolean checkEmpty(String[] data){
-        return (!Objects.equals(data[0], "")) | (!Objects.equals(data[1], ""));
+        return (data[0].isBlank()) | (data[1].isBlank());
     }
 
     @Override
